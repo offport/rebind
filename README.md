@@ -41,12 +41,21 @@ tray icon to pause or quit. **Start with Windows** is in the `•••` menu.
 
 ## Install
 
-Rebind needs Windows 10 or 11 and Python 3.12 to build. There is no installer yet.
+Rebind runs on Windows 10 and 11 (64-bit). There is no installer.
+
+1. Download `Rebind-1.0.0-windows-x64.zip` from the [latest release](https://github.com/offport/rebind/releases/latest).
+2. Unzip it anywhere and run `Rebind\Rebind.exe`.
+
+The build is not code-signed, so Windows SmartScreen may warn the first time. Choose **More info > Run anyway**.
+
+### Build it yourself
+
+Needs Python 3.12.
 
 ```powershell
 git clone https://github.com/offport/rebind.git
 cd rebind
-.\build.ps1
+.uild.ps1
 .\dist\Rebind\Rebind.exe
 ```
 
